@@ -1,0 +1,215 @@
+/*
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+body{
+    background-image: url(images/bg-desktop.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*RWD View for background*/
+@media only screen and (max-width: 770px) {
+    body{
+        background-image: url(images/bg-desktop.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.gird-container{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: auto auto auto;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: 275px 470px;
+    padding-top: 140px;
+}
+
+/*RWD View for grid container*/
+@media only screen and (max-width: 770px) {
+    .gird-container{
+        display: block;
+    }
+}
+
+.grid-item1{
+    background-color: hsl(228, 56%, 26%);
+    padding: 29px 0px 35px 25px;
+    border-radius: 6px 90px 6px 6px;
+}
+
+/*RWD View for grid item 1*/
+@media only screen and (max-width: 770px) {
+    .grid-item1{
+        width: 250px;
+    }
+}
+
+.grid-item2{
+    position: relative;
+    padding-top: 17px;
+}
+
+/*RWD View for grid item 2*/
+@media only screen and (max-width: 770px) {
+    .grid-item2{
+        width: 250px;
+    }
+
+    .storage-used{
+        font-size: 12px;
+    }
+}
+
+.upper-grid-item2{
+    position: relative;
+    z-index: 2;
+    width: 440px;
+    height: 24px;
+}
+
+
+/*RWD View for indicator*/
+@media only screen and (max-width: 770px) {
+    .upper-grid-item2{
+        display: none;
+    }
+}
+
+.PBI-div{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.amount-left{
+    background-color: white;
+    color: black;
+    width: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px 6px 0px 6px;
+}
+
+/*RWD View for amount left*/
+@media only screen and (max-width: 770px) {
+    .amount-left{
+        border-radius: 6px 6px 6px 6px;
+    }
+}
+
+.eight-one-five{
+    font-size: 1.7em;
+    font-weight: 700;
+    padding-left: 12px;
+    background-color: white;
+    border-radius: 6px 0px 0px 6px;
+}
+
+td.gig-left{
+    font-size: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lower-grid-item2{
+    position: relative;
+    background-color: hsl(228, 56%, 26%);
+    height: 120px;
+    padding-top: 22px;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.used-amount{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.icons{
+   
+    background-color: hsl(229, 57%, 11%);
+}
+
+.icons-div{
+    margin-top: 30px;
+    margin-right: 12px;
+}
+
+.progress-bar-div{
+    position: relative;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 6px;
+    padding: 2px 0px 2px 2px;
+}
+
+.progress-bar{
+    position: relative;
+    height: 10px;
+    width: 85.1%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), 
+    hsl(335, 100%, 65%));
+    border-radius: 6px;
+}
+
+.progress-indicator{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    height: 10px;
+    border-radius: 50%;
+    width: 3%; 
+}
+
+
+/*RWD View for progress indicator*/
+@media only screen and (max-width: 770px) {
+    .progress-indicator{
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.gig-div{
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.one-k-gig{
+    position: absolute;
+    right: 0;
+}
+
+.empty-div{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 0;
+    border-top: 16px solid white;
+    position: absolute;
+    right: 0;
+    border-right: 0px solid white;
+}
+
+.responsive-PBI-div{
+    display: none;
+}
+
+/*RWD View for responsive-PBI-divr*/
+@media only screen and (max-width: 770px) {
+    .responsive-PBI-div{
+        display: block;
+    }
+}
